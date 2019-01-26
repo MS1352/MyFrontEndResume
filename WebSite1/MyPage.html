@@ -5,6 +5,7 @@
     <title>Mason HomePage</title>
     <link rel="stylesheet" href="MyStyleSheet.css" />
 </head>
+
 <body>
     <img id="banner" src=".\images\header.jpg"  alt= "no image was found" />
     <a id="jump_down" href="#generalWrapper"></a>
@@ -28,7 +29,7 @@
    </div>
         
     <div id="generalWrapper">
-        <div class="aboutMe SmootEdge">
+        <div class="aboutMe SmootEdge" id="about">
             <h1>About</h1>
             <p>this is my about section</p>
             <p>this is my about section</p>
@@ -42,7 +43,7 @@
             <p>this is my about section</p><p>this is my about section</p><p>this is my about section</p>
         </div>
         <div id="wrapper">
-            <div id="Experience" class="textDiv SmootEdge"> <p>This is my Experience.</p><p>This is my Experience.</p><p>This is my Experience.</p>This is my Experience.</div>
+            <div id="Experience" class="textDiv SmootEdge" onclick="toggleHide()"> <p>This is my Experience.</p><p>This is my Experience.</p><p>This is my Experience.</p>This is my Experience.</div>
             <div id="Education" class="textDiv SmootEdge"> <p>this is my about my Education</p> <p>this is my about my Education</p> this is my about my Education</div>
             <div id="CV" class="textDiv SmootEdge"> <p>this is my CV</p><p>this is my CV</p>this is my CVthis is my CVthis is my CV</div>
             <div id="ContactMe" class="textDiv SmootEdge"> <p>This is contact me section.</p> <p>This is contact me section.</p> This is contact me section.</div>
@@ -57,11 +58,12 @@
             </ul>
         </div>
     </div>
-    <div class="footer">All rights reserved &copy;CopyRight <a href="http://www.mnc.ir" target="_blank">Mason Computing</a></p></div>
+    <div class="footer" id="footer" onclick="changeText()">All rights reserved &copy;CopyRight <a href="http://www.mnc.ir" target="_blank">Mason Computing</a></p></div>
     <div id="page_top"></div>
   <a id="jump_up" href="#page_top"></a>
   
 
 
 </body>
+<script type="text/javascript" src="myProjectScript.js"></script>
 </html>
